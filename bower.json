@@ -1,0 +1,31 @@
+{
+  "name": "hashCloud",
+  "version": "0.0.1",
+  "authors": [
+    "Dan Ward <danward@gmail.com>"
+  ],
+  "description": "Bower Dependencies for hashCloud",
+  "keywords": [
+    "Angular",
+    "Jade",
+    "SASS"
+  ],
+  "license": "MIT",
+  "homepage": "github.com/warlyware/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.1",
+    "angular-ui-router": "0.2.15",
+    "angularfire": "~1.1.2",
+    "firebase": "~2.2.9",
+    "jquery": "2.1.4",
+    "lodash": "3.10.0",
+    "pleasejs": "~0.4.2"
+  }
+}
