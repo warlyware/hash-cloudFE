@@ -10,7 +10,6 @@ angular.module('hashCloud')
   db.onAuth(function(authData) {
     if (authData) {
       $rootScope.currentUser = authData.twitter;
-      console.log("Logged in: ", authData);
     }
   });
 

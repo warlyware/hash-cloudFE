@@ -9,7 +9,6 @@ angular.module('hashCloud').controller("HomeCtrl", function($scope, $http, twitt
     wordsToCheckForHash = $scope.words.split(' ');
     wordsToCheckForHash.forEach(function(e) {
       if (e.substring(0, 1) !== '#') {
-        console.log('missing hash');
         e = '#' + e;
         wordsWithHashes.push(e);
       } else {
@@ -17,12 +16,10 @@ angular.module('hashCloud').controller("HomeCtrl", function($scope, $http, twitt
       }
     });
     wordsToSearch = wordsWithHashes.join(' ');
-    console.log(wordsToSearch);
 
 
     twitterUser.search(wordsToSearch)
     .success(function(data) {
-      // console.log(data);
       $scope.data = data;
       wordsArr = $scope.words.split(' ');
       $scope.randColor = Please.make_color({
@@ -39,7 +36,6 @@ angular.module('hashCloud').controller("HomeCtrl", function($scope, $http, twitt
   $scope.follow = function(screenName) {
     twitterUser.follow(screenName)
     .success(function(data) {
-      console.log(data);
       $scope.data.users[screenName].following = true;
     })
     .catch(function(err) {
@@ -63,6 +59,8 @@ angular.module('hashCloud').controller("HomeCtrl", function($scope, $http, twitt
 
   $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
+    $('.parallax').parallax();  
+
   });
 
 });

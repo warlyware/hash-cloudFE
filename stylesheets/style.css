@@ -1,9 +1,20 @@
+body {
+  background-color: rgba(58, 96, 103, 0.09);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 h5 {
   font-weight: lighter;
   font-style: italic;
   font-size: 1.5em;
   letter-spacing: 0.1em;
-  color: darkgray;
+  color: #464545;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 input {
@@ -12,6 +23,13 @@ input {
   margin-bottom: 5px;
 }
 
+.page-footer {
+  background-color: #079AB3 !important;
+}
+
+.landingpage p {
+  font-size: 1.5em;
+}
 
 .brand-logo {
   margin-left: -5px !important;
@@ -29,7 +47,7 @@ input {
 }
 
 button {
-  background-color: #35a6ff !important;
+  background-color: #079AB3 !important;
 }
 
 button.tweet-button {
@@ -60,8 +78,28 @@ input.checkbox {
   margin-top: 10px;
 }
 
+.sky-blue {
+  background-color: #079AB3;
+}
+
+.card-panel {
+  padding: 0 !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+/*
+.mid-card {
+  margin-left: 10px !important;
+}*/
+
 nav {
-  background-color: #35a6ff; }
+  background-color: #079AB3;
+}
+
+.material-icons {
+  color: #079AB3;
+}
 
 textarea {
   border: 1px solid rgba(164, 164, 164, 0.38);
