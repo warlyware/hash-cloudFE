@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hashCloud')
-.controller('NavCtrl', function($state, $scope, FBService, urls){
+.controller('NavCtrl', function($state, $scope, FBService, urls, $rootScope){
 
 
 
@@ -9,7 +9,7 @@ angular.module('hashCloud')
 
   db.onAuth(function(authData) {
     if (authData) {
-      $scope.currentUser = authData.twitter;
+      $rootScope.currentUser = authData.twitter;
       console.log("Logged in: ", authData);
     }
   });
@@ -22,9 +22,9 @@ angular.module('hashCloud')
   $scope.logout = function() {
 
       db.unauth();
-      $scope.currentUser = null;
+      $rootScope.currentUser = null;
       // $state.reload();
   };
-  $scope.currentUser = FBService.currentUser;
+  $rootScope.currentUser = FBService.currentUser;
 
 });

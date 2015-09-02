@@ -1,8 +1,17 @@
+h5 {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  color: darkgray;
+}
+
 input {
   margin-top: 20px;
   margin-top: 20px;
   margin-bottom: 5px;
 }
+
 
 .brand-logo {
   margin-left: -5px !important;
@@ -15,15 +24,8 @@ input {
   float: left;
   display: inline-block;
   font-weight: bold;
-  margin-left: 15px; }
-
-.tag span {
+  margin-left: 15px;
   cursor: pointer;
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: lighter;
-  font-style: italic;
-  color: darkgrey;
 }
 
 button {
@@ -64,8 +66,9 @@ nav {
 textarea {
   border: 1px solid rgba(164, 164, 164, 0.38);
   border-radius: 5px;
-  height: 100px;
-  width: 60%; }
+  height: 150px;
+  width: 80%;
+}
 
 .brand-logo {
   margin-left: 20px; }
