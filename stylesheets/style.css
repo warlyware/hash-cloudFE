@@ -97,12 +97,26 @@ nav {
   background-color: #079AB3;
 }
 
+#nav-username {
+  cursor: default !important;
+  margin-right: 20px;
+}
+
+#nav-username:hover {
+  background-color: #079AB3 !important;
+}
+
+#nav-username:after {
+  background-color: #079AB3 !important;
+}
+
 .material-icons {
   color: #079AB3;
 }
 
 textarea {
   border: 1px solid rgba(164, 164, 164, 0.38);
+  background-color: white;
   border-radius: 5px;
   height: 150px;
   width: 80%;
