@@ -39,9 +39,9 @@ angular.module('hashCloud').controller("HomeCtrl", function($scope, $http, twitt
       $scope.data.users[screenName].following = true;
     })
     .catch(function(err) {
-      console.log(err)
-    })
-  }
+      console.log(err);
+    });
+  };
 
   $scope.sendTweet = function() {
     twitterUser.sendTweet($scope.tweet)
@@ -55,11 +55,11 @@ angular.module('hashCloud').controller("HomeCtrl", function($scope, $http, twitt
 
   $scope.includeInTweet = function(tag) {
     $scope.tweet = $scope.tweet + ' ' + tag;
-  }
+  };
 
   $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
-    $('.parallax').parallax();  
+    $('.parallax').parallax();
 
   });
 
